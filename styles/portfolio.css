@@ -181,7 +181,7 @@ main section{
     margin-bottom: 20px;
 }
 .experience-description{
-    width:511px;
+    width:450px;
     font-size: 16px;
     font-weight: normal;
     line-height: 28px;
@@ -217,4 +217,55 @@ footer textarea {
     resize: none; 
     height: 150px; 
     width: 50%;    
+}
+
+/* Responsive layout */
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    .skills-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .resume-container{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    footer{
+        flex-direction: column;
+        padding:20px;
+    }
+    .footer-column{
+        width:100%;
+    }
+    footer input[type="text"], footer input[type="email"],footer textarea{
+        width:calc(100% - 40px);
+    }
+    .about{
+        padding:20px;
+        width:calc(100% - 40px);
+        margin: auto;
+    }
+    .about-items,.banner,nav, nav>ul{
+        flex-direction: column;
+    }
+    .banner{
+          margin: 20px;
+    }
+    .header{
+        background-image: none;
+    }
+    .banner-profile-pic{
+        width: 100%;
+    }
+    nav ul{
+        gap:20px;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
+    }
 }
